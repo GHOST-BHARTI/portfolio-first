@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neu; 
+    color: white;  
+}
+@font-face {
+    font-family: neu;
+    src: url("./NeueHaasDisplayLight.ttf");
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+#page1{
+    height: 100vh;
+    width:100%; 
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+#page1 img{
+    height: 100vh;
+    width: 100vw;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position:absolute;
+    padding: 3vw 3vw;
+}
+#navbar-left{
+    background-color: transparent;
+    color: #9fbeac;
+    position: absolute;
+    font-size: 3vh;
+    padding-left: 2vw;
+}
+#navbar-right{
+    display:flex;
+    gap: 30px;
+    background-color: transparent;
+    position: absolute;
+    left:900px;
+}
+#navbar-right a{
+    flex: 1;
+    text-decoration: none;
+    outline-color: transparent;
+    text-align: center;
+    font-family: neu;
+    font-weight: 10;
+    font-size: 1.1vw;
+    color: #9fbeac;
+}
+#intro{
+    height: 40vh;
+    width: 40%;
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    top: 30%;
+    left: 16%;
+    font-size: 3vw;
+}
+#heading{
+    display:flex;
+    gap: 14px;
+}
+#hello-dot{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-top: 70px;
+    background-color: #9fbeac;
+}
+#name{
+    display: flex;
+    gap: 20px;
+}
+#line{
+    height: 3.5px;
+    width: 40px;
+    border-radius: 1.75px;
+    background-color: #9fbeac;
+    margin-top: 26px;
+}
+#intro-para h3{
+    font-size: 46px;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    color: rgba(255, 255, 255, 0.881);
+}
+#intro-para h6{
+    font-size: 23px;
+    margin-top: 15px;
+    word-spacing: 5px;
+    color: rgba(255, 255, 255, 0.703);
+}
+button {
+    height: 40px;
+    width: 130px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border: none;
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:#9fbeac;
+    font-size: 13.5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 0 5px #00ffff,
+                0 0 25px #00ffff,
+                0 0 50px #00ffff,
+                0 0 200px #00ffff;
+}
+button i{
+    padding-top: 2.3px;
+    color: black;
+
+}
+button h3{
+    color: black;
+}
+#page1-footer{
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0vw 2vw;
+    position: absolute;
+    bottom: 0;
+}
+#page1-footer-left{
+    display: flex;
+    gap: 10px;
+}
+#page1-footer-left h4{
+    font-size: 14.5px;
+    font-weight: 100;
+    color:rgba(255, 255, 255, 0.5);
+}
+#connect-line{
+    height: 2px;
+    width: 65px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#page1-footer-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+#page1-footer-right i{
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.5);
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#page2-top{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    gap: 15px;
+}
+#page2-top h1{
+    font-size: 4vw;
+}
+#page2-top h4{
+    color: rgba(255, 255, 255, 0.5);
+}
+#bio-line{
+    height: 50px;
+    width: 2px;
+    background-color: #9fbeac;
+}
+#page2-center{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#page2-center-left{
+    height: 30vw;
+    width: 400px;
+    background-image: url("./square-pic.jpg");
+    background-size: cover;
+}
+#page2-center-left img{
+    object-fit: cover;
+    object-position: center;
+}
+#page2-center-right{
+    height: 30vw;
+    width: 550px;
+    margin-left:160px;
+    /* background-color:yellow; */
+}
+#about{
+    color: #9fbeac;
+    font-size: 3vw;
+}
+#page2-center-right h1{
+    font-size: 3.5vw;
+    margin-bottom: 20px;
+}
+#page2-center-right h3{
+    color: rgba(255, 255, 255, 0.5);
+
+}
+#page2-center-right p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1vw;
+}
+#center-top{
+    display: flex;
+    justify-content:flex-start;
+    margin-top: 20px;
+    gap: 20px;
+}
+#center-top-left{
+    height: 100px;
+    width: 250px;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-left: 3.5px solid #9fbeac;
+    /* background-color: red; */
+}
+#center-top-right{
+    height: 100px;
+    width: 250px;
+    padding: 1.5vw;
+    border-left: 3.5px solid #9fbeac;
+    background-color: rgba(255, 255, 255, 0.12);
+    /* background-color: red; */
+}
+
+#center-bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content:flex-start;
+    gap: 20px;
+}
+
+#center-bottom-left{
+    height: 100px;
+    width: 250px;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-left: 3.5px solid #9fbeac;
+    /* background-color: blue; */
+}
+
+#center-bottom-right{
+    height: 100px;
+    width: 250px;
+    padding: 1.5vw;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-left: 3.5px solid #9fbeac;
+    /* background-color: blue; */
+}
+button h4{
+    color: black;
+    font-size: 1vw;
+}
+
