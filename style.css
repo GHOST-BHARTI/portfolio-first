@@ -9,6 +9,10 @@
     font-family: neu;
     src: url("./NeueHaasDisplayLight.ttf");
 }
+@font-face {
+    font-family:Comfortaa;
+    src: url("./Comfortaa-Bold.ttf");
+}
 
 html, body {
     height: 100%;
@@ -57,6 +61,8 @@ html, body {
     font-weight: 10;
     font-size: 1.1vw;
     color: #9fbeac;
+    overflow: hidden;
+    transition: all ease 0.4;
 }
 #intro{
     height: 40vh;
@@ -195,7 +201,7 @@ button h3{
     gap: 20px;
 }
 #page2-center-left{
-    height: 30vw;
+    height: 33.5vw;
     width: 400px;
     background-image: url("./square-pic.jpg");
     background-size: cover;
@@ -225,6 +231,7 @@ button h3{
 #page2-center-right p{
     color: rgba(255, 255, 255, 0.5);
     font-size: 1.1vw;
+    line-height: 1.2vw;
 }
 #center-top{
     display: flex;
@@ -238,7 +245,8 @@ button h3{
     padding: 1.5vw;
     background-color: rgba(255, 255, 255, 0.12);
     border-left: 3.5px solid #9fbeac;
-    /* background-color: red; */
+    border-bottom-left-radius:50px;
+    border-top-right-radius: 50px;
 }
 #center-top-right{
     height: 100px;
@@ -246,6 +254,8 @@ button h3{
     padding: 1.5vw;
     border-left: 3.5px solid #9fbeac;
     background-color: rgba(255, 255, 255, 0.12);
+    border-bottom-left-radius:50px;
+    border-top-right-radius: 50px;
     /* background-color: red; */
 }
 
@@ -262,6 +272,8 @@ button h3{
     padding: 1.5vw;
     background-color: rgba(255, 255, 255, 0.12);
     border-left: 3.5px solid #9fbeac;
+    border-bottom-left-radius:50px;
+    border-top-right-radius: 50px;
     /* background-color: blue; */
 }
 
@@ -271,10 +283,98 @@ button h3{
     padding: 1.5vw;
     background-color: rgba(255, 255, 255, 0.12);
     border-left: 3.5px solid #9fbeac;
+    border-bottom-left-radius:50px;
+    border-top-right-radius: 50px;
     /* background-color: blue; */
 }
 button h4{
     color: black;
     font-size: 1vw;
 }
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+#projects-top h1{
+    font-family: Comfortaa;
+    font-size:15vw;
+    color: #9fbeac;
+}
+#projects-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    gap:5vw;
+    padding: 5vw 0vw;
+    padding-bottom: 8vw;
+}
+#projects-sign{
+    font-size: 6.3vw;
+}
+#number{
+    color: #9fbeac;
+}
+#arrow i{
+    color: #9fbeac;
+}
+#projects-grid{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    margin-bottom: 5vw;
+    justify-content: center;
+    gap: 1.5vw;
 
+}
+.left{
+    height: 70vh;
+    width: 44%;
+
+}
+.left h5{
+    font-family: Comfortaa;
+    margin-top: 1.5vw;
+}
+.right h5{
+    font-family: Comfortaa;
+    margin-top: 1.5vw;
+}
+.right{
+    height: 70vh;
+    width: 44%;
+}
+#img1{
+    height: 55vh;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(./sundown-studio.avif);
+}
+#img2{
+    height: 55vh;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(./pexels-ann-h-45017-25070769.jpg);
+    background-size: cover;
+}
+#img3{
+    height: 55vh;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(./rejouice.jpg);
+    background-size: cover;
+}
+#img4{
+    height: 55vh;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(./tic-tac-toe.jpg);
+    background-size: cover;
+}
+.left h1{
+    font-size: 3.5vw;
+}
+.right h1{
+    font-size: 3.5vw;
+}
